@@ -22,6 +22,10 @@ public class Playlist implements IComponent {
     @Override
     public void setPlaybackSpeed(float speed) { this.speed = speed; }
 
+    public IComponent getSong(int index) {
+        return playlist.get(index);
+    }
+
     @Override
     public String getName() { return playlistName; }
 

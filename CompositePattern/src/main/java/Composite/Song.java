@@ -13,6 +13,8 @@ public class Song implements IComponent {
     @Override
     public void setPlaybackSpeed(float speed) { this.speed = speed; }
 
+    public float getPlaybackSpeed() { return speed; }
+
     @Override
     public String getName() { return songName; }
 
