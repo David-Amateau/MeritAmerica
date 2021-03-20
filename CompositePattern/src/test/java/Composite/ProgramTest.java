@@ -16,10 +16,12 @@ public class ProgramTest {
         playlist.add(song2);
         song1.setPlaybackSpeed(0.50f);
         song2.setPlaybackSpeed(1.50f);
+        playlist.setPlaybackSpeed(2.00f);
 
         assertEquals("Jamming", song1.getName());
         assertEquals("Playlist", playlist.getName());
         assertEquals("Jamming", playlist.getSong(0).getName());
+        assertEquals(2.00f, song1.getPlaybackSpeed(), 0);
 
     }
 
