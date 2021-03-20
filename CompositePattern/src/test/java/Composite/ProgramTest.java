@@ -20,7 +20,6 @@ public class ProgramTest {
         assertEquals("Jamming", song1.getName());
         assertEquals("Playlist", playlist.getName());
         assertEquals("Jamming", playlist.getSong(0).getName());
-        assertEquals(0.50f, playlist.getSong(0).getPlaybackSpeed());
 
     }
 

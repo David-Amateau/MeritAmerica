@@ -6,7 +6,7 @@ public class Playlist implements IComponent {
 
     public String playlistName;
     public ArrayList<IComponent> playlist = new ArrayList();
-    public float speed = 1;
+
 
     public Playlist(String playlistName) { this.playlistName = playlistName; }
 
@@ -20,7 +20,8 @@ public class Playlist implements IComponent {
     }
 
     @Override
-    public void setPlaybackSpeed(float speed) { this.speed = speed; }
+    public void setPlaybackSpeed(float speed) {
+        this.setPlaybackSpeed(speed); }
 
     public IComponent getSong(int index) {
         return playlist.get(index);
