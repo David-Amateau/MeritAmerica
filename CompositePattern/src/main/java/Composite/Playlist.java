@@ -21,7 +21,10 @@ public class Playlist implements IComponent {
 
     @Override
     public void setPlaybackSpeed(float speed) {
-        this.setPlaybackSpeed(speed); }
+        for (IComponent component: playlist) {
+            component.setPlaybackSpeed(speed);
+        }
+    }
 
     public IComponent getSong(int index) {
         return playlist.get(index);
